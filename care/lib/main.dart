@@ -29,6 +29,11 @@ class _MyHomePageState extends State<MyHomePage> {
   double tamano = 100;
   void disminuir() {
     setState(() {
+      counter--;
+    });
+  }
+  void aumentar() {
+    setState(() {
       counter++;
     });
   }
@@ -50,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            FloatingActionButton(onPressed: disminuir,
+            FloatingActionButton(onPressed: aumentar,
             tooltip: 'Increment',
             child: const Icon(Icons.add),
             ),
