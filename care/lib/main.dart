@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Care 1.0'),
     );
   }
 }
@@ -26,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counter--;
     });
   }
   @override
