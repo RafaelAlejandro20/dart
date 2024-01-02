@@ -23,10 +23,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  void _incrementCounter() {
+  int counter = 0;
+  void aumentar() {
     setState(() {
-      _counter--;
+      counter++;
     });
   }
   @override
@@ -44,14 +44,14 @@ class _MyHomePageState extends State<MyHomePage> {
               'Presiona este boton las veces que quieras',
             ),
             Text(
-              '$_counter',
+              '$counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: aumentar,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
