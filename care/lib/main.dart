@@ -26,6 +26,7 @@ class MyHomePage extends StatefulWidget {
 }
 class _MyHomePageState extends State<MyHomePage> {
   int counter = 0;
+  double tamano = 100;
   void disminuir() {
     setState(() {
       counter++;
