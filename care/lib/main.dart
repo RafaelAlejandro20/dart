@@ -24,7 +24,7 @@ class MyHomePage extends StatefulWidget {
 }
 class _MyHomePageState extends State<MyHomePage> {
   int counter = 0;
-  void aumentar() {
+  void disminuir() {
     setState(() {
       counter++;
     });
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: aumentar,
+        onPressed: disminuir,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
