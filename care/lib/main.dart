@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             FloatingActionButton(onPressed: aumentar,
-            tooltip: 'Increment',
+            tooltip: 'Aumentar',
             child: const Icon(Icons.add),
             ),
             FloatingActionButton(onPressed: disminuir,
