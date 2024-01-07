@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FloatingActionButton(onPressed: disminuir,
             tooltip: 'Disminuir',
-            child: const Icon(Icons.album_sharp),
+            child: const Icon(Icons.exposure_minus_1),
             ),
           ],
         ),
